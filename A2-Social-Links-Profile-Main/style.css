@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Inter";
+    src: url('assets/fonts/static/Inter-Bold.ttf'),
+         url('assets/fonts/static/Inter-Regular.ttf'),
+         url('assets/fonts/static/Inter-SemiBold.ttf'),
+         url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+
+body{
+    background-color: var(--off-black);
+    color: var(--white);
+    font-family: 'Inter', 'sans-serif';
+    padding: 1.8rem 3rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--dark-grey);
+    padding: 1.4rem;
+    margin: auto;
+    width: 18rem;
+    height: 27rem;
+    border-radius: 0.3rem;
+}
+
+
+.profile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.profile img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.8rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: var(--green);
+    font-size: 0.6rem;
+    margin-bottom: 1.1rem;
+    font-weight: bold;
+}
+
+.bio {
+    font-size: 0.65rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 1px;
+}
+
+.button-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: var(--grey);
+    color: var(--white);
+    padding: 0.6rem 0.8rem;
+    border: none;
+    border-radius: 0.4rem;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.btn:hover{
+    background-color: var(--green);
+    color: var(--off-black);
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 300px;
+  }
+  .bio {
+    font-size: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}
